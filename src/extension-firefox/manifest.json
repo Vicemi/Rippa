@@ -32,10 +32,14 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "rippa@vicemi.dev",
-      "strict_min_version": "109.0",
+      "strict_min_version": "140.0",
       "data_collection_permissions": {
-        "description": "Esta extensión envía información sobre el anime que estás viendo (título, episodio, géneros, imagen) a una aplicación de escritorio local para mostrar tu presencia. No se recopilan datos personales ni se envían a servidores externos."
+        "required": ["websiteContent"],
+        "description": "Esta extensión necesita acceder al título, episodio, géneros e imagen del anime que estás viendo para enviarlos a una aplicación de escritorio local que muestra tu presencia. Todos los datos se quedan en tu ordenador y no se envían a servidores externos."
       }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
     }
   },
   "content_security_policy": {
