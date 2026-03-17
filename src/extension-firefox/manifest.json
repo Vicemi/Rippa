@@ -32,7 +32,10 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "rippa@vicemi.dev",
-      "strict_min_version": "109.0"
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "description": "Esta extensión envía información sobre el anime que estás viendo (título, episodio, géneros, imagen) a una aplicación de escritorio local para mostrar tu presencia. No se recopilan datos personales ni se envían a servidores externos."
+      }
     }
   },
   "content_security_policy": {
