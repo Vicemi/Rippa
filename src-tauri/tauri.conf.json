@@ -1,70 +1,14 @@
 {
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Rippa",
+  "version": "1.0.0",
+  "identifier": "com.vicemi.rippa",
   "build": {
     "beforeDevCommand": "",
     "beforeBuildCommand": "",
-    "devPath": "../src",
-    "distDir": "../src",
-    "withGlobalTauri": false
+    "frontendDist": "../src"
   },
-  "package": {
-    "productName": "Rippa",
-    "version": "1.0.0"
-  },
-  "tauri": {
-    "allowlist": {
-      "shell": {
-        "all": false,
-        "open": true
-      }
-    },
-    "bundle": {
-      "active": true,
-      "identifier": "com.vicemi.rippa",
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ],
-      "resources": [
-        "../extension/**/*"
-      ],
-      "externalBin": [],
-      "copyright": "",
-      "category": "Utility",
-      "shortDescription": "Rippa - Anime Discord Presence",
-      "longDescription": "",
-      "deb": {
-        "depends": []
-      },
-      "macOS": {
-        "frameworks": [],
-        "minimumSystemVersion": "",
-        "exceptionDomain": "",
-        "signingIdentity": null,
-        "entitlements": null
-      },
-      "windows": {
-        "certificateThumbprint": null,
-        "digestAlgorithm": "sha256",
-        "timestampUrl": "",
-        "wix": null,
-        "nsis": {
-          "installerIcon": "icons/icon.ico",
-          "installMode": "perUser",
-          "displayLanguageSelector": false,
-          "startMenuFolder": "Rippa",
-          "allowDowngrades": false,
-          "allowToChangeInstallationDirectory": true,
-          "oneClick": false,
-          "shortcuts": true
-        }
-      }
-    },
-    "updater": {
-      "active": false
-    },
+  "app": {
     "windows": [
       {
         "title": "Rippa",
@@ -78,9 +22,29 @@
         "center": true
       }
     ],
-    "systemTray": {
-      "iconPath": "../tray-icon.png",
-      "iconAsTemplate": true
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/icon16.png",
+      "icons/icon32.png",
+      "icons/icon128.png",
+      "icons/icon.ico"
+    ],
+    "resources": [
+      "../extension/**/*"
+    ],
+    "externalBin": [],
+    "copyright": "",
+    "category": "Utility",
+    "shortDescription": "Rippa - Anime Discord Presence",
+    "longDescription": "",
+    "windows": {
+      "digestAlgorithm": "sha256"
     }
   }
 }
