@@ -2,7 +2,7 @@
 
 Sistema que muestra en Discord el anime que estás viendo actualmente en [animeav1.com](https://animeav1.com), con portada, título, episodio y géneros, ya estoy preparando para hacerlo compatible con AnimeFLV y AnimeYT. Consta de una aplicación de escritorio y una extensión para navegadores basados en Chromium.
 
-![Banner del proyecto](URL_DEL_BANNER)  
+![Banner del proyecto](https://i.imgur.com/FOugpeN.png)  
 
 ## Características
 
