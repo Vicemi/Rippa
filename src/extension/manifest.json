@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Rippa",
+  "version": "1.0",
+  "description": "Envía a la app de escritorio el anime que estás viendo en animeav1.com",
+  "permissions": ["activeTab"],
+  "host_permissions": [
+    "https://animeav1.com/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://animeav1.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

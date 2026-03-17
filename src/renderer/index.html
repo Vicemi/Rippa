@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rippa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="window">
+    <div class="header">
+      <span>Rippa</span>
+      <button id="close-btn">✕</button>
+    </div>
+    <div class="content">
+      <div id="anime-info" class="hidden">
+        <img id="anime-image" src="" alt="Portada">
+        <h2 id="anime-title"></h2>
+        <p id="anime-episode"></p>
+        <div id="anime-genres"></div>
+        <div class="buttons">
+          <button id="view-anime">▶ Ver Anime</button>
+          <button id="download-app">📥 Descargar App</button>
+        </div>
+      </div>
+      <div id="no-data" class="visible">
+        <p>😴 No se detecta ningún anime.</p>
+        <p>Asegúrate de tener la extensión instalada y estar en animeav1.com</p>
+      </div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
