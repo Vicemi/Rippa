@@ -47,6 +47,25 @@ Descarga el archivo `extension.zip` desde la misma sección de [Releases](https:
 4. Haz clic en **Cargar extensión descomprimida** y selecciona la carpeta donde descomprimiste los archivos.
 5. La extensión aparecerá en la lista. Asegúrate de que esté habilitada.
 
+
+### 🔧 Instalación en Firefox
+
+1. Abre Firefox y escribe en la barra de direcciones:  
+   `about:debugging`
+
+2. Haz clic en **"Este Firefox"** (o **"This Firefox"**).
+
+3. Haz clic en **"Cargar complemento temporal..."**.
+
+4. Navega hasta la carpeta `extension-firefox` y selecciona el archivo `manifest.json`.
+
+5. La extensión se cargará y estará activa mientras Firefox esté abierto.  
+   Si cierras el navegador, se desactivará, estamos trabajando para que se mantenga permantente firmandola con el archivo xml de FIrefox y asi puedas descargar esta extension desde la tienda y puedas usarla mas comodamente.
+
+---
+
+> **Nota:** Asegúrate de tener la aplicación de escritorio (que escucha en `ws://localhost:9876`) ejecutándose para que la extensión funcione correctamente.
+
 ## Uso
 
 1. Asegúrate de que la aplicación de escritorio esté ejecutándose (icono en la bandeja).
